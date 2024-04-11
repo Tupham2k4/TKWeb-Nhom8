@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Hà gia yến</title>
+    <link rel="icon" href="/image/icon.jpg" type="image/gif" sizes="16x16" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./fonts/themify-icons-font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <h2> HỆ THỐNG NHÀ YẾN HÀ GIA - BÌNH PHƯỚC </h2>
+    <header><img src="./image/bìa.jpg" style="width: 100% ;height: auto;"></header>
+    <h3> TRAO GIÁ TRỊ - NHẬN NIỀM TIN</h3>
+    <style>
+        body {
+            background-color: aliceblue;
+            background-position: right top;
+            background-size: 70%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h2 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: red;
+            font-size: 16pt;
+            text-align: center;
+        }
+
+        h3 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16pt;
+            text-align: center;
+        }
+    </style>
+    <div class="search-text">
+        <input type="search" , name="Tìm kiếm" placeholder="Tìm kiếm">
+        <a href="" class="search-btn">
+            <i class="ti-search"></i>
+        </a>
+    </div>
+
+</head>
+
+<body>
+    <br>
+    <h3> Giới thiệu sản phẩm</h3>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="image\Tổ yến đông trùng hạ thảo.jpg" alt="<b>TỔ YẾN ĐÔNG TRÙNG HẠ THẢO</b>"
+                onclick="openModal(this)">
+            <h4> Tổ yến chưng đường phèn </h4>
+            <p> Giá bán: 480.000</p>
+            <button><a href="muahang1.html">Mua ngay</a></button>
+            <button> Chi tiết</button>
+        </div>
+        <div class="gallery-item">
+            <img src="image\Tổ yến chưng đường phèn.jpg" alt="<b>TỔ YẾN CHƯNG ĐƯỜNG PHÈN</b>" onclick="openModal(this)">
+            <div class="description"> TỔ YẾN CHƯNG ĐƯỜNG PHÈN</div>
+        </div>
+        <div class="gallery-item">
+            <img src="image\Tổ yến chưng nhân sâm Hàn Quốc.jpg" alt="<b>TỔ YẾN CHƯNG NHÂN SÂM HÀN QUỐC</b>"
+                onclick="openModal(this)">
+            <div class="description">TỔ YẾN CHƯNG NHÂN SÂM HÀN QUỐC</div>
+        </div>
+        <div class="gallery-item">
+            <img src="image\Yến sơ mướp.jpg" alt="<b>YẾN SƠ MƯỚP</b>" onclick="openModal(this)">
+            <div class="description">YẾN SƠ MƯỚP</div>
+        </div>
+        <div class="gallery-item">
+            <img src="image\Tổ yến chưng lá dứa.jpg" alt="<b>TỔ YẾN CHƯNG LÁ DỨA</b>" onclick="openModal(this)">
+            <div class="description">TỔ YẾN CHƯNG LÁ DỨA</div>
+        </div>
+        <div class="gallery-item">
+            <img src="image\Yến rút lông nguyên tổ.jpg" alt="<b>YẾN RÚT LÔNG NGUYÊN TỔ</b>" onclick="openModal(this)">
+            <div class="description">YẾN RÚT LÔNG NGUYÊN TỔ</div>
+        </div>
+    </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modal-image" src="" alt="">
+            <p id="image-info"></p>
+            <p></p>
+        </div>
+    </div>
+    <div id="myModal" class="modal">
+        <div class="model-content">
+
+        </div>
+    </div>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <img src="image/slideshow1.jpg">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="image/slideshow2.jpg">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="image/slideshow3.jpg">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="image/slideshow4.jpg">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="image/slideshow5.jpg">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <script>
+        function openModal(img) {
+            var modal = document.getElementById("myModal");
+            var modalImg = document.getElementById("modal-image");
+            var captionText = document.getElementById("image-info");
+            modal.style.display = "block";
+            modalImg.src = img.src;
+            captionText.innerHTML = img.alt;
+
+            modalImg.style.width = "auto";
+            modalImg.style.height = "auto";
+            modalImg.style.maxWidth = "70%";
+            modalImg.style.maxHeight = "70%";
+
+
+        }
+
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
+        }
+    </script>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <img src="image/icon.jpg" style="width:130px; height: auto;">
+                    <div>
+                        TRANG WEB CHÍNH THỨC
+                        <br>
+                        CỦA HÀ GIA YẾN
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>CONTACT US</h4>
+                    <p> Thôn 3, Thống Nhất, Bù Đăng, Bình Phước </p>
+                    <P><i class="fas fa-phone-alt"></i> Phone: 0916 286 679</P>
+                    <p><i class="fas fa-envelope"></i> Email: yensaohagia@gmail.com</p>
+                    <p><i class="fas fa-shopping-cart"></i> Shopee: shopee.vn/hagiayen2020</p>
+                </div>
+                <div class="footer-col">
+                    <h4>GET SOCIAL</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/hagiayen.vn"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.youtube.com/@hagiayen5644"><i class="fab fa-youtube"></i></a>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
