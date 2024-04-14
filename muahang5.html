@@ -10,7 +10,6 @@
     <link rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="./fonts/themify-icons-font/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
-    <h2> HỆ THỐNG NHÀ YẾN HÀ GIA - BÌNH PHƯỚC </h2>
     <header><img src="./image/bìa.jpg" style="width: 100% ;height: auto;"></header>
     <h3> TRAO GIÁ TRỊ - NHẬN NIỀM TIN</h3>
     <style>
@@ -33,22 +32,140 @@
             font-size: 16pt;
             text-align: center;
         }
+
+        h3 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16pt;
+            text-align: center;
+        }
+
+        .muahang h3 {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: left;
+            font-size: 20pt;
+        }
+
+        .muahang {
+            padding: 0 10px;
+            width: 50%;
+        }
+
+        .muahang p {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: red;
+            font-weight: bold;
+            font-size: 27pt;
+        }
+
+        button {
+            margin-left: 4px;
+            font-size: 15px;
+        }
+
+        .container3 {
+            background-color: white;
+            padding: 0 15px;
+            max-width: 1170px;
+            margin: auto;
+        }
+
+        .container4 {
+            background-color: white;
+            padding: 0 15px;
+            max-width: 1170px;
+            margin: auto;
+        }
     </style>
 </head>
 
 <body>
-    <div>
-        <div class="muahang">
-            <img src="image/Yến rút lông nguyên tố.jpg" style="width: 300px; height: auto;">
-            </div>
-        <div class="muahang">
-            <h4> Yến rút lông nguyên tố</h4>
-            <p> Giá bán 384.000</p>
-            <button> Đặt hàng ngay</button>
-            <button><i class="far fa-shopping-cart">Thêm vào giỏ hàng </i></button>
-        </div>    
-        <div style="clear: both;float: left;"></div>
+    <div class="flex-container">
+        <nav>
+            <a href="trang_chu.html"> Trang chủ</a>
+            <a href="#">Giới thiệu</a>
+            <a href="#">Sản phẩm</a>
+            <a href="lienhe.html"> Liên hệ</a>
+            <a href="#"><i class="fad fa-shopping-cart"></i> Giỏ hàng</a>
+        </nav>
     </div>
+    <div>
+        <div class="container2">
+            <div class="row2">
+                <div class="muahang">
+                    <img src="image/Yến rút lông nguyên tố.jpg" style="width: 300px; height: auto;">
+                </div>
+                <div class="muahang">
+                    <h3> Yến rút lông nguyên tổ</h3>
+                    <p style="font-size: 11pt; color: black; margin: auto; font-weight:lighter;"> 32 Đã bán | 5 Đánh giá
+                    </p>
+                    <p> Giá bán: 2.000.000 VNĐ</p>
+                    <form class="p-1" action="https://httpbin.org/anything" method="post">
+                        <label for="number">Số lượng</label>
+                        <input type="number" name="number" id="number" max="999" min="1" step="1"
+                            style="width: 70px; height: auto;"> <br><br>
+
+                    </form>
+                    <button> Đặt hàng ngay</button>
+                    <button><i class="far fa-shopping-cart">Thêm vào giỏ hàng </i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container3">
+        <div class="row3">
+            <p style="font-size: 18pt;"> CHI TIẾT SẢN PHẨM </p>
+            <p style="font-size: 12pt;"> Thương hiệu: Hà Gia Yến </p>
+            <p style="font-size: 12pt;"> Xuất xứ: Việt Nam </p>
+            <p style="font-size: 12pt;"> Hạn sử dụng: 12 tháng </p>
+            <p style="font-size: 12pt;"> Trọng lượng: 100g </p>
+            <p style="font-size: 12pt;"> Thành phần: Yến sợi </p>
+            <p style="font-size: 12pt;"> Số lượng còn: 100 </p>
+            <p style="font-size: 12pt;"> Gửi từ: Bình Phước </p>
+        </div>
+    </div>
+    <br>
+    <div class="container4">
+        <div class="row4">
+            <p style="font-size: 18pt;">MÔ TẢ SẢN PHẨM</p>
+            <p style="font-size: 12pt;">Yến rút lông nguyên tổ là loại yến khi lấy về còn nguyên tổ và chưa qua xử lý
+                vẫn còn nguyên lông và tạp chất. Từ đó, những người thợ sẽ dùng kính lúp lấy sạch tạp chất và lông nhỏ
+                trên tổ yến nhưng vẫn giữ nguyên tổ lẫn hình dáng như ban đầu. Đây là sản phẩm được gọi là cao cấp trong
+                tất cả dòng yến, bởi tổ yến được chọn lựa những những tổ yến thật kỹ càng, vừa đẹp, đủ già để khi làm
+                không bị nát. Vì thế nên số lượng cũng không nhiều nên giá thành tương đối cao.<br>
+                <br>
+                Đặc điểm của yến rút lông nguyên tổ:<br>
+                Là dòng sản phẩm cao cấp trong các dòng yến vì để làm ra yến rút lông phải lựa những tổ yến làm bởi con
+                chim già, tổ đẹp, rất ít lông và tạp chất, có độ dai, ngâm không rã trong nước trong thời gian nhất
+                định. Thông thường là những tổ yến thượng hạng được chọn lựa kỹ và số lượng không nhiều nên giá nguyên
+                liệu rất cao.<br>
+                Sơ chế tổ yến bằng phương pháp rút lông đòi hỏi thợ có tay nghề cao, tỉ mỉ, chi phí nhân công cũng cao
+                hơn. Do vậy mà giá thành của yến rút lông có phần đắt đỏ hơn các sản phẩm yến khác.
+                Giá trị dinh dưỡng của tổ yến rút lông được giữ nguyên giữ vì quá trình sơ chế rất hạn chế tiếp xúc với
+                nước mà chỉ thực hiện phun ẩm tổ để dễ làm sạch.<br>
+                Tổ yến rút lông gần như giữ lại nguyên vẹn hình dáng ban đầu của tổ yến thô.<br>
+                Chắc hẳn mọi người không còn xa lạ với những công dụng mà tổ yến mang lại đúng không ạ?. Dưới đây sẽ là
+                một số công dụng lớn nhất mà tổ yến mang lại:<br>
+                <br>
+                - Giúp trẻ hoá làn da : Yến nguyên tổ cung cấp tận 18 axit amin cùng với 30 khoáng chất rất cần thiết
+                cho
+                cơ thể trong việc chống lão hoá.<br>
+                - Cải thiện hệ tiêu hoá: Những bạn có hệ tiêu hoá cần được cải thiện thì yến sào là một thứ không thể
+                thiếu bởi yến sào mang lại giá trị dinh dưỡng cực cao nhưng lại cực dễ tiêu hoá giúp bạn sớm hồi phục
+                sức khoẻ nhanh hơn và bổ sung đầy đủ chất cho cơ thể.<br>
+                - Dành cho mẹ mới sinh: Đây là giai đoạn mà mẹ cần bổ sung nhiều dinh dưỡng nhất để hồi phục sức khoẻ
+                sau
+                khi sinh và có thêm chất trong sữa mẹ giúp bé có thể phát triển toàn diện.<br>
+
+                Cách bảo quản yến rút lông:<br>
+
+                - Vì không cần xử lý qua khâu nhặt lông nữa nên việc bảo quản cũng trở nên dễ dàng hơn. Bạn chỉ cần đậy
+                kín tổ yến trong hộp nhựa, thuỷ tinh và bảo quản nơi khô ráo, thoáng mát. Tốt hơn nữa bạn có thể bảo
+                quản trong tủ lạnh sẽ được lâu hơn. Nếu trong môi trường với nhiệt độ phù hợp tổ yến có thể bảo quẩn lên
+                tới 3 đến 5 năm.
+            </p>
+        </div>
+    </div>
+    <br>
     <footer class="footer">
         <div class="container">
             <div class="row">
