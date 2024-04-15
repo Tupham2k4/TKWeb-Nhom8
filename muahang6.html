@@ -77,8 +77,8 @@
     <div class="flex-container">
         <nav>
             <a href="trang_chu.html"> Trang chủ</a>
-            <a href="#">Giới thiệu</a>
-            <a href="#">Sản phẩm</a>
+            <a href="gioithieu.html">Giới thiệu</a>
+            <a href="sanpham.html">Sản phẩm</a>
             <a href="lienhe.html"> Liên hệ</a>
             <a href="#"><i class="fad fa-shopping-cart"></i> Giỏ hàng</a>
         </nav>
@@ -87,13 +87,36 @@
         <div class="container2">
             <div class="row2">
                 <div class="muahang">
-                    <img src="image/Tổ yến chưng lá dứa.jpg" style="width: 300px; height: auto;">
+                    <div class="slideshow-container">
+
+                        <div class="mySlides fade">
+                            <img src="image/Tổ yến chưng lá dứa.jpg">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img src="image/Yến chưng lá dứa 1.jpg">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img src="image/yến chưng lá dứa 2.jpg">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="image/yến chưng lá dứa 3.jpg">
+                        </div>
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
                 </div>
                 <div class="muahang">
                     <h3> Tổ yến chưng hương lá dứa. Một hộp 6 hũ 70ml</h3>
-                    <p style="font-size: 11pt; color: black; margin: auto; font-weight:lighter;"> 32 Đã bán | 5 Đánh giá
+                    <p style="font-size: 11pt; color: black; margin: auto; font-weight:lighter;"><i class="fas fa-star"
+                            style="color: rgba(211, 3, 3, 0.912);"></i><i class="fas fa-star"
+                            style="color: rgba(211, 3, 3, 0.912);"></i><i class="fas fa-star"
+                            style="color: rgba(211, 3, 3, 0.912);"></i><i class="fas fa-star"
+                            style="color: rgba(211, 3, 3, 0.912);"></i><i class="fas fa-star"
+                            style="color: rgba(211, 3, 3, 0.912);"></i>| 32 Đã bán | 5 Đánh giá
                     </p>
-                    <p> Giá bán: 240.000 VNĐ</p>
+                    <p> 240.000 VNĐ</p>
                     <form class="p-1" action="https://httpbin.org/anything" method="post">
                         <label for="number">Số lượng</label>
                         <input type="number" name="number" id="number" max="999" min="1" step="1"
@@ -106,6 +129,32 @@
             </div>
         </div>
     </div>
+    <script>
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
+        }
+    </script>
     <div class="container3">
         <div class="row3">
             <p style="font-size: 18pt;"> CHI TIẾT SẢN PHẨM </p>
