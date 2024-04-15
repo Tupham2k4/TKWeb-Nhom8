@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Hà gia yến</title>
+  <link rel="icon" href="/image/icon.jpg" type="image/gif" sizes="16x16" />
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="./fonts/themify-icons-font/themify-icons/themify-icons.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+  <header><img src="./image/bìa.jpg" style="width: 100% ;height: auto;"></header>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: aliceblue;
+      background-position: right top;
+      background-size: 70%;
+      margin: 0;
+      padding: 20px;
+    }
+
+    /* Style the modal */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    /* Style the modal content */
+    .modal-content {
+      display: grid;
+      grid-template-columns: auto auto;
+      margin: auto;
+      gap: 20px;
+      padding: 20px;
+      text-align: center;
+      width: 800px;
+      background-color: #fefefe;
+      border-radius: 5px;
+      position: absolute;
+      left: 50%;
+      top: 40%;
+      right: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    /* The Close Button */
+    .close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      color: #f44336;
+      font-size: 28px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: #d32f2f;
+    }
+
+    /* Red Button */
+    .red-button {
+      background-color: rgba(211, 3, 3, 0.912);
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin-top: 20px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .red-button:hover {
+      background-color: #e4616a;
+    }
+
+    /* Grid container */
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    /* Grid item */
+    .grid-item {
+      cursor: pointer;
+      border: 3px solid #ccc;
+      border-radius: 10%;
+      display: block;
+      width: 90%;
+      height: 280px;
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+      margin: 10px;
+      /* You can adjust this margin to control the spacing */
+      padding: 10px;
+      /* Optional: Add padding if needed */
+    }
+
+    /* Image box */
+    .image-box {
+      padding: 10px;
+      position: relative;
+    }
+
+    /* Image box image */
+    .image-box img {
+      width: 100%;
+      height: 100%;
+      border-radius: 5px;
+
+    }
+
+    /* Text inside image box */
+    .image-text {
+      margin-top: 10px;
+    }
+
+    .text-box {
+      text-align: left;
+      margin-right: 25px;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
+
+    .grid-item h3 {
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      font-size: 12pt;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Modal 1 -->
+  <div class="flex-container">
+    <nav>
+      <a href="trang_chu.html"> Trang chủ</a>
+      <a href="gioithieu.html">Giới thiệu</a>
+      <a href="#">Sản phẩm</a>
+      <a href="lienhe.html"> Liên hệ</a>
+      <a href="#"><i class="fad fa-shopping-cart"></i> Giỏ hàng</a>
+    </nav>
+    <h2 style="padding: 10px; text-align: center;"> DANH MỤC SẢN PHẨM</h2><br>
+    <div id="myModal1" class="modal">
+      <div class="modal-content">
+        <div class="image-box">
+          <img src="image\Tổ yến chưng đường phèn(shrinked).jpg" alt="Image 1">
+        </div>
+        <div class="text-box">
+          <h3>Tổ yến chưng đường phèn</h3>
+          <p>✅ Sản Phẩm Tặng Kèm Túi Giấy Xách Ngoài, Táo Đỏ, Hạt Sen, Sách Hướng Dẫn.</p>
+          <p>🕛 Giao Hàng toàn quốc, vận chuyển miễn phi tại khu vực Bình Phước.</p>
+          <button class="red-button"><a href="muahang2.html">Mua ngay</a></button>
+        </div>
+        <span class="close" onclick="document.getElementById('myModal1').style.display='none'">&times;</span>
+      </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div id="myModal2" class="modal">
+      <div class="modal-content">
+        <div class="image-box">
+          <img src="image\Tổ yến đông trùng hạ thảo (shrinked).jpg" alt="Image 2">
+        </div>
+        <div class="text-box">
+          <h3>Tổ yến đông trùng hạ thảo</h3>
+          <p>✅ Sản Phẩm Tặng Kèm Túi Giấy Xách Ngoài, Táo Đỏ, Hạt Sen, Sách Hướng Dẫn.</p>
+          <p>🕛 Giao Hàng toàn quốc, vận chuyển miễn phi tại khu vực Bình Phước.</p>
+          <button class="red-button"><a href="muahang1.html">Mua ngay</a></button>
+        </div>
+        <span class="close" onclick="document.getElementById('myModal2').style.display='none'">&times;</span>
+      </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div id="myModal3" class="modal">
+      <div class="modal-content">
+        <div class="image-box">
+          <img src="image\Tổ yến chưng nhân sâm Hàn Quốc (shrinked).jpg" alt="Image 3">
+        </div>
+        <div class="text-box">
+          <h3>Tổ yến chưng nhân sâm Hàn Quốc</h3>
+          <p>✅ Sản Phẩm Tặng Kèm Túi Giấy Xách Ngoài, Táo Đỏ, Hạt Sen, Sách Hướng Dẫn.</p>
+          <p>🕛 Giao Hàng toàn quốc, vận chuyển miễn phi tại khu vực Bình Phước.</p>
+          <button class="red-button"><a href="muahang3.html">Mua ngay</a></button>
+        </div>
+        <span class="close" onclick="document.getElementById('myModal3').style.display='none'">&times;</span>
+      </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div id="myModal4" class="modal">
+      <div class="modal-content">
+        <div class="image-box">
+          <img src="image\Yến sơ mướp.jpg" alt="Image 4">
+        </div>
+        <div class="text-box">
+          <h3>Yến sơ mướp</h3>
+          <p>✅ Sản Phẩm Tặng Kèm Túi Giấy Xách Ngoài, Táo Đỏ, Hạt Sen, Sách Hướng Dẫn.</p>
+          <p>🕛 Giao Hàng toàn quốc, vận chuyển miễn phi tại khu vực Bình Phước.</p>
+          <button class="red-button"><a href="muahang4.html">Mua ngay</a></button>
+        </div>
+        <span class="close" onclick="document.getElementById('myModal4').style.display='none'">&times;</span>
+      </div>
+    </div>
+
+    <!-- Modal 5 -->
+    <div id="myModal5" class="modal">
+      <div class="modal-content">
+        <div class="image-box">
+          <img src="image\Tổ yến chưng lá dứa (shrinked).jpg" alt="Image 5">
+        </div>
+        <div class="text-box">
+          <h3>Tổ yến chưng lá dứa</h3>
+          <p>✅ Sản Phẩm Tặng Kèm Túi Giấy Xách Ngoài, Táo Đỏ, Hạt Sen, Sách Hướng Dẫn.</p>
+          <p>🕛 Giao Hàng toàn quốc, vận chuyển miễn phi tại khu vực Bình Phước.</p>
+          <button class="red-button"><a href="muahang6.html">Mua ngay</a></button>
+        </div>
+        <span class="close" onclick="document.getElementById('myModal5').style.display='none'">&times;</span>
+      </div>
+    </div>
+
+    <!-- Modal 6 -->
+    <div id="myModal6" class="modal">
+      <div class="modal-content">
+        <div class="image-box">
+          <img src="image/Yến rút lông nguyên tố.jpg" alt="Image 6">
+        </div>
+        <div class="text-box">
+          <h3>Yến rút lông nguyên tổ</h3>
+          <p>✅ Sản Phẩm Tặng Kèm Túi Giấy Xách Ngoài, Táo Đỏ, Hạt Sen, Sách Hướng Dẫn.</p>
+          <p>🕛 Giao Hàng toàn quốc, vận chuyển miễn phi tại khu vực Bình Phước.</p>
+          <button class="red-button"><a href="muahang5.html">Mua ngay</a></button>
+        </div>
+        <span class="close" onclick="document.getElementById('myModal6').style.display='none'">&times;</span>
+      </div>
+    </div>
+
+    <!-- Grid container for modals -->
+    <div class="grid-container">
+      <!-- Trigger 1 -->
+      <div class="grid-item" onclick="openModal(1)">
+        <img src="image\Tổ yến chưng đường phèn.jpg" alt="Image 1" style="width:200px;height:200px;">
+        <h3>Tổ yến chưng đường phèn</h3>
+      </div>
+
+      <!-- Trigger 2 -->
+      <div class="grid-item" onclick="openModal(2)">
+        <img src="image\Tổ yến đông trùng hạ thảo.jpg" alt="Image 2" style="width:200px;height:200px;">
+        <h3>Tổ yến đông trùng hạ thảo</h3>
+      </div>
+
+      <!-- Trigger 3 -->
+      <div class="grid-item" onclick="openModal(3)">
+        <img src="image\Tổ yến chưng nhân sâm Hàn Quốc.jpg" alt="Image 3" style="width:200px;height:200px;">
+        <h3>Tổ yến chưng nhân sâm Hàn Quốc</h3>
+      </div>
+
+      <!-- Trigger 4 -->
+      <div class="grid-item" onclick="openModal(4)">
+        <img src="image\Yến sơ mướp.jpg" alt="Image 4" style="width:200px;height:200px;">
+        <h3> Yến sơ mướp</h3>
+      </div>
+
+      <!-- Trigger 5 -->
+      <div class="grid-item" onclick="openModal(5)">
+        <img src="image\Tổ yến chưng lá dứa.jpg" alt="Image 5" style="width:200px;height:200px;">
+        <h3> Tổ yến chưng hương lá dứa</h3>
+      </div>
+
+      <!-- Trigger 6 -->
+      <div class="grid-item" onclick="openModal(6)">
+        <img src="image/Yến rút lông nguyên tố.jpg" alt="Image 6" style="width:200x;height:200px;">
+        <h3> Yến rút lông nguyên tố</h3>
+      </div>
+    </div>
+
+    <script>
+      function openModal(modalNum) {
+        document.getElementById('myModal' + modalNum).style.display = "block";
+      }
+
+      // Close the Modal when clicking outside of it
+      window.onclick = function (event) {
+        if (event.target.classList.contains('modal')) {
+          event.target.style.display = "none";
+        }
+      }
+    </script>
+
+</body>
+
+</html>
