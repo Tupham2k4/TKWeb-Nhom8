@@ -60,7 +60,7 @@ header {
 .nav {
     display: flex;
     background-color: rgba(211, 3, 3, 0.912);
-
+    font-weight: bold;
 }
 
 .nav a {
