@@ -6,58 +6,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hà Gia Yến</title>
-    <link rel="icon" href="/image/icon.jpg" type="image/gif" sizes="16x16" />
-    <link rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="./fonts/themify-icons-font/themify-icons/themify-icons.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
     <!-- box icons  -->
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <header><img src="./image/bìa.jpg" style="width: 100% ;height: auto;"> </header>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
     <!-- styles  -->
     <link rel="stylesheet" href="css/style3.css">
 </head>
 
 <body>
-    <!-- NAV  -->
-    <div class="flex-container">
+    <!-- HEADER  -->
+    <header>
+        <img src="./image/bìa.jpg" style="width: 100% ;height: auto;">
+        <!-- NAV  -->
         <nav>
-            <a href="trang_chu.html"> Trang chủ</a>
-            <a href="gioithieu.html">Giới thiệu</a>
-            <a href="sanpham.html">Sản phẩm</a>
-            <a href="lienhe.html"> Liên hệ</a>
-            <a href="giohang.html"><i class="fa-solid fa-cart-shopping"></i> Giỏ hàng</a>
+            <div class="nav container">
+                <a href="trang_chu.html"> Trang chủ</a>
+                <a href="gioithieu.html">Giới thiệu</a>
+                <a href="sanpham.html">Sản phẩm</a>
+                <a href="lienhe.html"> Liên hệ</a>
+                <a href="giohang.html"><i class="fad fa-shopping-cart"></i> Giỏ hàng</a>
+                <!-- CART ICON  -->
+                <div id="cart-icon">
+                    <i class="fa-solid fa-cart-shopping" id="cart-icon"></i>
+                </div>
         </nav>
-    </div>
-    <br>
-    <!-- CART ICON  -->
-    <div id="cart-icon">
-        <i class="fa-solid fa-cart-shopping" id="cart-icon"></i>
-    </div>
-    <!-- CART  -->
-    <div class="cart">
-        <h2 class="cart-title">Giỏ Hàng</h2>
+        <!-- CART  -->
+        <div class="cart">
+            <h2 class="cart-title">Giỏ Hàng</h2>
 
-        <!-- CONTENT  -->
-        <div class="cart-content">
+            <!-- CONTENT  -->
+            <div class="cart-content">
 
+            </div>
+
+            <!-- TOTAL   -->
+            <div class="total">
+                <div class="total-title">Tổng</div>
+                <div class="total-price">0đ</div>
+            </div>
+            <!-- BUY BUTTON  -->
+            <button type="button" class="btn-buy">Mua ngay</button>
+            <!-- CART CLOSE  -->
+            <i class='bx bx-x' id="cart-close"></i>
         </div>
-
-        <!-- TOTAL   -->
-        <div class="total">
-            <div class="total-title">Tổng</div>
-            <div class="total-price">0đ</div>
         </div>
-        <!-- BUY BUTTON  -->
-        <button type="button" class="btn-buy">Mua ngay</button>
-        <!-- CART CLOSE  -->
-        <i class='bx bx-x' id="cart-close"></i>
-    </div>
-    </div>
+    </header>
+
     <!-- SHOP SECTION  -->
     <section class="shop container">
         <h2 class="section-title">Sản Phẩm</h2>
-
         <!-- CONTENT  -->
         <div class="shop-content">
             <!-- BOX 1 -->
@@ -65,42 +64,42 @@
                 <img src="image\Tổ yến chưng lá dứa.jpg" alt="" class="product-img">
                 <h2 class="product-title">Tổ yến chưng lá dứa</h2>
                 <br>
-                <span class="product-price">240.000đ</span>
+                <span class="product-price">840.000đ</span>
                 <i class='fa-solid fa-cart-plus add-cart'></i>
             </div>
             <!-- BOX 2 -->
             <div class="product-box">
                 <img src="image\Tổ yến chưng nhân sâm Hàn Quốc.jpg" alt="" class="product-img">
                 <h2 class="product-title">Tổ yến chưng nhân sâm Hàn Quốc</h2>
-                <span class="product-price">420.000đ</span>
+                <span class="product-price">840.000đ</span>
                 <i class='fa-solid fa-cart-plus add-cart'></i>
             </div>
             <!-- BOX 3 -->
             <div class="product-box">
                 <img src="image\Tổ yến chưng đường phèn.jpg" alt="" class="product-img">
                 <h2 class="product-title">Tổ yến chưng đường phèn</h2>
-                <span class="product-price">330.000đ</span>
+                <span class="product-price">840.000đ</span>
                 <i class='fa-solid fa-cart-plus add-cart'></i>
             </div>
             <!-- BOX 4 -->
             <div class="product-box">
                 <img src="image\Tổ yến đông trùng hạ thảo.jpg" alt="" class="product-img">
                 <h2 class="product-title">Tổ yến đông trùng hạ thảo</h2>
-                <span class="product-price">420.000đ</span>
+                <span class="product-price">840.000đ</span>
                 <i class='fa-solid fa-cart-plus add-cart'></i>
             </div>
             <!-- BOX 5 -->
             <div class="product-box">
                 <img src="image/Yến rút lông nguyên tố.jpg" alt="" class="product-img">
                 <h2 class="product-title">Yến rút lông nguyên tổ</h2>
-                <span class="product-price">2.000.000đ</span>
+                <span class="product-price">840.000đ</span>
                 <i class='fa-solid fa-cart-plus add-cart'></i>
             </div>
             <!-- BOX 6 -->
             <div class="product-box">
                 <img src="image\Yến sơ mướp.jpg" alt="" class="product-img">
                 <h2 class="product-title">Yến sơ mướp</h2>
-                <span class="product-price">1.500.000đ</span>
+                <span class="product-price">840.000đ</span>
                 <i class='fa-solid fa-cart-plus add-cart'></i>
             </div>
 
